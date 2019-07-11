@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sitio en construcción</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <style>
-        .centro{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            text-align: center;
-        }
-        .advice{
-            margin: auto;
-            background-color: white;
-            box-shadow: 2px;
-            width: 30rem;
-            height: auto;
-            padding: 20px;
-        }
-    </style>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="dist/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/bootstrap/mdb.min.css">
+
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Página en construcción</title>
 </head>
-<body class="bg-light">
-    <div class="centro text-center">
-        <div class="advice border rounded shadow">
-            <h1>Esta pagina esta en construcción</h1>
-            <h5>Disculpe las molestias</h5>
-            <h6>:(</h6>
+<body>
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+            <div class="wave waveTop" style="background-image: url('img/background/wave-top.png')"></div>
         </div>
-        
+        <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle" style="background-image: url('img/background/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom" style="background-image: url('img/background/wave-bot.png')"></div>
+        </div>
     </div>
+
+    <div class='overlay-div'>
+        <div class="animated fadeIn d-block text-center text-white">
+            <h1 style="font-family: 'helvetica'; font-size: 80px;">ola<br>aahshah hsadjh hss</h1>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="dist/bootstrap/jquery-3.4.1.min.js"></script>
+    <script src="dist/bootstrap/popper.min.js"></script>
+    <script src="dist/bootstrap/bootstrap.min.js"></script>
+    <script src="dist/bootstrap/mdb.min.js"></script>
+
+
 </body>
 </html>
