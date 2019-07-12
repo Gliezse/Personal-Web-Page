@@ -1,61 +1,81 @@
-/*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700&display=swap');
 
-body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
+/*Stars with ParticleJS*/
+
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
 
-.overlay-div{
-    z-index: 1000;
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+    background-color: rgb(23, 24, 47, 0.7);
+}
+
+/*My code*/
+#background-img{
+    z-index: -100;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
+    background-image: url(../img/background/bg.jpg);
+    background-position-y: 40%;
+    background-size: cover;
 }
-
-.centro{
+#personal{
+    z-index: 100;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    height: 40%;
+    /*padding: 0 10%;*/
 }
 
-#box-cont{
-
+#personal h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 130px;
 }
 
-#box{
-    border-radius: 12px;
-    background: #fff;
-    padding: 30px;
-    height: 80%;
-    width: 80%;
-    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+#personal h3{
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
 
-#profile-pic{
-    width: 90%;
-    margin:auto;
-    border-radius: 30px;
+#personal h4{
+    margin-bottom: 1rem;
+    font-size: 20px;
 }
 
-h6{
-    font-size: 2rem
+#personal p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 
-h1{
-    font-size: 5rem
+#personal #icon-list{
+    font-size: 30px;
+    list-style: none;
+    margin-top: 1rem;
 }
 
-@media(max-width: 728px){
-    h1{
-        font-size: 3rem
-    }
-    h6{
-        font-size: 1.4rem
-    }
+#personal #icon-list li{
+    display: inline;
+    margin: 0 5px;
+}
+
+#personal #icon-list li a{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#personal #icon-list li a:hover{
+    color: white;
+}
+
+#icon-list-cont{
+    display: table;
+    margin: 0 auto;
 }
