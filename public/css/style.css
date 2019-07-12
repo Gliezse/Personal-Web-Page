@@ -13,7 +13,7 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
     background-color: rgb(23, 24, 47, 0.7);
@@ -22,7 +22,7 @@ canvas {
 /*My code*/
 #background-img{
     z-index: -100;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-image: url(../img/background/bg.jpg);
@@ -78,4 +78,38 @@ canvas {
 #icon-list-cont{
     display: table;
     margin: 0 auto;
+}
+
+@media(max-width:768px){
+    #personal h1{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 95px;
+    }
+
+    #personal h3{
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    #personal h4{
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    #personal p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+    h6{
+        font-size: 15px;
+    }
+
+    #profile-pic{
+        width: 50% !important;
+    }
 }
