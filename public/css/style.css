@@ -13,9 +13,9 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(23, 24, 47, 0.7);
 }
 
@@ -80,7 +80,7 @@ canvas {
     margin: 0 auto;
 }
 
-@media(max-width:768px){
+@media(max-width:1500px){
     #personal h1{
         font-family: 'Open Sans', sans-serif;
         font-size: 95px;
@@ -108,7 +108,9 @@ canvas {
     h6{
         font-size: 15px;
     }
+}
 
+@media(max-width:768px){
     #profile-pic{
         width: 50% !important;
     }
