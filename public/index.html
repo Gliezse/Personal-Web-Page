@@ -22,56 +22,183 @@
 </head>
 <body>
 
-
-    <div id="background-img">
-    </div>
-
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
+    <main>
+        <div id="menu-bars" onclick="menuToggle()">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <div id="menu">
+            <div class="centro">
+                <ul>
+                    <li onclick="goTo('home-page')">
+                        <h1 class="font-weight-bold home-page-opt menu-opt curr-page text-light">
+                            Cristian Cruz
+                        </h1>
+                    </li>
+                    <li onclick="goTo('sobre-mi')">
+                        <h2 class="sobre-mi-opt menu-opt">
+                            Sobre mi
+                        </h2>
+                    </li>
+                    <li>
+                        <h2 class="educacion-opt menu-opt">
+                            Educación
+                        </h2>
+                    </li>
+                    <li>
+                        <h2 class="proyectos-opt menu-opt">
+                            Proyectos
+                        </h2>
+                    </li>
+                    <li onclick="goTo('contacto')">
+                        <h2 class="contacto-opt menu-opt">
+                            Contacto
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
     
-    <div id="personal" class="text-light d-block w-100 text-center container-fluid animated fadeIn">
-        <div class="row">
-            <div class="col-md-3 col-sm-1"></div>
-            <div class="col-md-6 col-sm-10">
-                <h3>Hola, yo soy</h3>
-                <h1>
-                    Cristian Cruz
-                </h1>
-                <h4>
-                    y soy un <b>Desarrollador FullStack Junior</b>
-                </h4>
-
-                <p>
-                    Me encanta programar y me considero bueno en lo que hago. Me encuentro constantemente creando, investigando y principalmente <b>aprendiendo</b>.
-                    Para mi no existe mejor satisfacción que las <b>cosas salgan como quiero que salgan</b>, por lo que persevero y me esfuerzo en cumplirlo.
-                    Mi objetivo es conseguir un empleo donde pueda aplicar mis conocimientos y más que nada adquirir nuevos.
-                </p>
-
-                <p>
-                   Entre los lenguajes que manejo actualmente se encuentran <b>HTML5, CSS, Javascript y JAVA</b>, manejando así tambien tecnologias y frameworks
-                   tales como <b>JQuery, Vue.js, Spring</b>, entre otras.
-                </p>
-
-                <img src="img/profile.jpg" alt="profile pic" class="rounded-circle w-25 shadow" id="profile-pic">
-                <div id="icon-list-cont">
-                    <ul id="icon-list" class="p-0">
-                        <li><a href="https://www.linkedin.com/in/cristian-alexis-cruz-3ba522187/" target="blank"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/gliezse" target="blank"><i class="fab fa-github-square"></i></a></li>
-                    </ul>
-                </div>
+        <section id="home-page" class="p-0">
+                <div id="background-img">
+                    </div>
                 
-                <footer>
-                    <h5 class="m-0"><b>Contacto:</b></h5>
-                    <h5 class="m-0">Cel: 11 3287-1177</h5>
-                    <h5>Mail: cristian.cruz.cca@gmail.com</h5>
-                    <h6 class="mt-3">Esta página se encuentra en desarrollo, pronto se agregará mas contenido.</h6>
-                    <h6><b>Gracias por su visita!</b></h6>
-                </footer>
+                    <!-- particles.js container -->
+                    <div id="particles-js"></div>
+            <div class="centro">
+                <div id="personal" class="text-light d-block w-100 text-center container-fluid animated fadeIn fast">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-1"></div>
+                        <div class="col-md-6 col-sm-10">
+                            <h3>Hola, yo soy</h3>
+                            <h1>
+                                Cristian Cruz
+                            </h1>
+                            <h4>
+                                y soy un <b>Desarrollador FullStack Junior</b>
+                            </h4>
+            
+                            
+            
+                            <img src="img/profile.jpg" alt="profile pic" class="rounded-circle w-25 shadow" id="profile-pic">
+                            <div id="icon-list-cont">
+                                <ul id="icon-list" class="p-0">
+                                    <li><a href="https://www.linkedin.com/in/cristian-alexis-cruz-3ba522187/" target="blank"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://github.com/gliezse" target="blank"><i class="fab fa-github-square"></i></a></li>
+                                </ul>
+                            </div>
+            
+                            <div>
+                                <button class="btn" onclick="menuToggle()">
+                                    <h4 class="m-0">Conoceme</h4>
+                                </button>
+                            </div>   
+                        </div>
+                        <div class="col-md-3 col-sm-1"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sobre-mi" class="d-none">
+            <div class="container-fluid animated fadeIn fast">
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-1"></div>
+                    <div class="col-md-6 col-sm-10 text-center">
+                        <div>
+
+                            
+                            <h1>
+                                <span>
+                                    SOBRE MI
+                                </span> 
+                            </h1>
+                            <div class="frame">
+                                <h2>
+                                    <span class="underline--magical">
+                                        Quién soy?
+                                    </span>
+                                    
+                                </h2>
+                                <p>
+                                    Mi nombre es <b>Cristian Alexis Cruz</b>, y soy un desarrollador FullStack Junior. <br>
+                                    Viví mis 19 años en Capital Federal, Buenos Aires.<br>
+
+    
+                                    Me encanta programar y me considero bueno en lo que hago. Me encuentro constantemente creando, investigando y principalmente <b>aprendiendo</b>.
+                                    Para mi no existe mejor satisfacción que las <b>cosas salgan como quiero que salgan</b>, por lo que persevero y me esfuerzo en cumplirlo.
+                                    <br>
+                                    Me considero una persona perseverante, curiosa, a veces competitiva
+                                    y un tanto perfeccionista.
+                                </p>
+                            </div>
+                            <h6 class="mt-3">Esta página se encuentra en desarrollo, pronto se agregará mas contenido.</h6>
+                            <h6><b>Gracias por su visita!</b></h6>
+                            
+                            <!--<div class="frame">
+                                <h2>
+                                    <span class="underline--magical">
+                                        Personalidad
+                                    </span>
+                                </h2>
+    
+                                <p>
+                                    
+                                </p>
+                            </div>
+
+                            <div class="frame">
+                                <h2>
+                                    <span class="underline--magical">
+                                        Qué hago?
+                                    </span>
+                                </h2>
+    
+                                <p>
+                                    ni yo se xd
+                                </p>
+                            </div>-->
+
+<!--
+                            <h2>
+                                <span class="underline--magical">
+
+                                    
+                                    Qué busco?
+                                </span>
+                            </h2>
+                            <p>
+                                Mi objetivo es conseguir un empleo donde pueda aplicar mis conocimientos y más que nada adquirir nuevos.
+                            </p>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-1"></div>
+                </div>
 
             </div>
-            <div class="col-md-3 col-sm-1"></div>
+            
+        </section>
+
+        <section id="contacto" class="d-none">
+            <h5 class="m-0"><b>Contacto:</b></h5>
+            <h5 class="m-0">Cel: 11 3287-1177</h5>
+            <h5>Mail: cristian.cruz.cca@gmail.com</h5>
+            
+        </section>
+    </main>
+
+    <div id="landscape-warning">
+        <div>
+            <img src="./img/rotate_screen_icon.gif" alt="rotate-your-phone-gif">
+            <h3>Por favor, coloca tu celular en orientación vertical!</h3>
         </div>
+        
     </div>
+    
+
+    
     
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
@@ -82,6 +209,8 @@
     <script src="dist/bootstrap/popper.min.js"></script>
     <script src="dist/bootstrap/bootstrap.min.js"></script>
     <script src="dist/bootstrap/mdb.min.js"></script>
+
+    <script src="./js/script.js"></script>
 
 
 </body>
