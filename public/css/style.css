@@ -51,8 +51,6 @@ section{
 }
 
 #particles-js {
-    position: fixed;
-    width: 100vw;
     height: 100vh;
     background-color: rgb(23, 24, 47, 0.7);
 }
@@ -123,7 +121,7 @@ section{
     border-radius: 10px;
 }
 
-#sobre-mi{
+.bg-clarito{
     background-color: #f9f9ff;
 }
 
@@ -163,7 +161,8 @@ section{
 
     z-index: 6000;
 
-    background-image: linear-gradient(#00002b, black)
+    background-image: linear-gradient(#00002b, black);
+    opacity: .95;
 }
 
 #menu ul{

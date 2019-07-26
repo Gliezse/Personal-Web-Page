@@ -23,7 +23,7 @@
 <body>
 
     <main>
-        <div id="menu-bars" onclick="menuToggle()">
+        <!--<div id="menu-bars" onclick="menuToggle()">
             <i class="fas fa-bars"></i>
         </div>
         
@@ -40,16 +40,16 @@
                             Sobre mi
                         </h2>
                     </li>
-                    <!--<li>
+                    <li onclick="goTo('educacion')">
                         <h2 class="educacion-opt menu-opt">
                             Educación
                         </h2>
                     </li>
-                    <li>
+                    <li onclick="goTo('proyectos')">
                         <h2 class="proyectos-opt menu-opt">
                             Proyectos
                         </h2>
-                    </li>-->
+                    </li>
                     <li onclick="goTo('contacto')">
                         <h2 class="contacto-opt menu-opt">
                             Contacto
@@ -59,14 +59,14 @@
                 <h6 class="mt-3 text-light">Esta página se encuentra en desarrollo, pronto se agregará mas contenido.</h6>
                 <h6 class="text-light"><b>Gracias por su visita!</b></h6>
             </div>
-        </div>
+        </div>-->
     
         <section id="home-page" class="p-0">
-                <div id="background-img">
-                    </div>
-                
-                    <!-- particles.js container -->
-                    <div id="particles-js"></div>
+            <div id="background-img"></div>
+        
+            <!-- particles.js container -->
+            <div id="particles-js"></div>
+
             <div class="centro">
                 <div id="personal" class="text-light d-block w-100 text-center container-fluid animated fadeIn fast">
                     <div class="row">
@@ -103,14 +103,14 @@
 
         </section>
 
-        <section id="sobre-mi" class="d-none">
+        <section id="sobre-mi" class="bg-clarito">
             <div class="container-fluid animated fadeIn fast">
 
                 <div class="row">
                     <div class="col-md-3 col-sm-1"></div>
-                    <div class="col-md-6 col-sm-10 text-center">
+                    <div class="col-md-6 col-sm-10">
                         <div>
-                            <h1 class="color-titles titles">
+                            <h1 class="color-titles titles text-center">
                                 <span>
                                     SOBRE MI
                                 </span> 
@@ -128,17 +128,17 @@
                                     Viví mis 19 años en Capital Federal, Buenos Aires.
                                     <br>
                                     Soy egresado de escuela técnica y actualmente me encuentro cursando el primer año de la Licenciatura en Informatica.
+                                </p>
 
-                                    <hr class="w-75">
-    
+                                <hr class="w-75">
+                                <p class="text-gray">
                                     Me encanta programar y me considero bueno en lo que hago. Me encuentro constantemente creando, investigando y principalmente <b>aprendiendo</b>.
                                     Para mi no existe mejor satisfacción que las <b>cosas salgan como quiero que salgan</b>, por lo que persevero y me esfuerzo en cumplirlo.
-
-                                    <hr class="w-75">
-
+                                </p>
+                                <hr class="w-75">
+                                <p class="text-gray">
                                     Me considero una persona perseverante, curiosa, a veces competitiva
                                     y un tanto perfeccionista.
-
                                 </p>
                             </div>
                           
@@ -182,18 +182,21 @@
             
         </section>
 
-        <section id="contacto" class="d-none text-center">
+        <footer id="contacto" class="text-center w-50 m-auto rounded" style="background-color: rgb(0,0,0,0.5)">
             <div>
                 <h1 class="titles color-titles mt-4">
                     Contacto:
                 </h1>
-                <p>
+                <span class="text-white">
                     <h5 class="m-0">Cel: 11 3287-1177</h5>
                     <h5>Mail: cristian.cruz.cca@gmail.com</h5>
-                </p>
+                </span>
             </div>
-            
-            
+        </footer>
+
+        <section class="bg-white text-center pb-3 mt-4">
+            <h4>Esta página se encuentra en desarrollo, pronto se agregará mas contenido.</h4>
+            <h4><b>Gracias por su visita!</b></h4>
         </section>
     </main>
 
