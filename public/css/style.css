@@ -21,6 +21,11 @@ section{
     padding-top: 2em;
 }
 
+nav{
+    background-color: #0f3250;
+    
+}
+
 #menu-bars{
     position: fixed;
     top:.3em;
@@ -117,7 +122,7 @@ section{
 }
 
 .btn{
-    background-color: #293d4e;
+    background-color: #0f3250;
     border-radius: 10px;
 }
 
