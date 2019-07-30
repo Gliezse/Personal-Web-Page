@@ -21,7 +21,7 @@ function goTo( where ){
 
 let navItems = document.querySelectorAll('nav ul li a')
 let sections = document.querySelectorAll('section')
-
+/*
 window.onscroll = function () {
     let fromTop = window.pageYOffset
     
@@ -43,7 +43,7 @@ window.onscroll = function () {
             link.parentElement.classList.remove('active')
         }
     })
-}
+}*/
 
 // Select all links with hashes
 $('a[href*="#"]')
