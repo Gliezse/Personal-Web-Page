@@ -19,17 +19,11 @@ function goTo( where ){
     $('#menu').css({'right':'-120%'})
 }
 
-let navItems = document.querySelectorAll('nav ul li a')
+let navItems = document.querySelectorAll('nav a')
 let sections = document.querySelectorAll('section')
-/*
+
 window.onscroll = function () {
     let fromTop = window.pageYOffset
-    
-    if (fromTop >= $('nav').offset().top) {
-        $('nav').addClass('sticky-top')
-    } else {
-        $('nav').removeClass('sticky-top')
-    }
 
     navItems.forEach(link => {
         let section = document.querySelector(link.hash)
@@ -38,12 +32,13 @@ window.onscroll = function () {
             section.offsetTop <= fromTop+200 &&
             section.offsetTop + section.offsetHeight > fromTop
         ){
+            navItems.forEach(linkaux =>{
+              linkaux.parentElement.classList.remove('active')
+            })
             link.parentElement.classList.add('active')
-        }else{
-            link.parentElement.classList.remove('active')
         }
     })
-}*/
+}
 
 // Select all links with hashes
 $('a[href*="#"]')

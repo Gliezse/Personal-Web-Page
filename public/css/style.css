@@ -18,7 +18,8 @@ canvas {
 }
 
 section{
-    padding-top: 2em;
+    position: relative;
+    padding-top: 1rem;
 }
 
 nav{
@@ -55,17 +56,25 @@ nav{
     text-align: center;
 }
 
+#home-page{
+    padding: 3rem 0 2rem;
+}
+
+#personal{
+    position: relative;
+    z-index: 100;
+    background: -moz-element()
+}
+
 #particles-js {
     position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120vh;
     background-color: rgb(23, 24, 47, 0.7);
 }
 
-/*My code*/
-#background-img{
-    z-index: -100;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+.background-img{
     background-image: url(../img/background/bg.jpg);
     background-position-y: 40%;
     background-size: cover;
@@ -122,7 +131,7 @@ nav{
     border: double 8px white;
 }
 
-.btn{
+#home-page .btn{
     background-color: #0f3250;
     border-radius: 10px;
 }
@@ -139,6 +148,7 @@ nav{
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    margin-bottom: .5em;
 }
 
 .color-titles{
@@ -262,3 +272,40 @@ nav{
         width: 30%;
     }
   }
+
+.portfolio-frame{
+    background: white;
+    width: 100%;
+    margin: 0 auto 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: all .2s;
+}
+
+.portfolio-frame img{
+    width: 100%;
+}
+
+.portfolio-frame:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.portfolio-frame h4{
+    font-weight: 400
+}
+
+.portfolio-frame p{
+    font-size: .9em;
+    color: #777;
+}
+
+.portfolio-frame button{
+    padding: .5rem 1rem !important;
+}
+
+.ver-online-btn{
+    background-color: #0f3250;
+    border: solid 1px #00002b;
+    border-radius: 10px;
+}

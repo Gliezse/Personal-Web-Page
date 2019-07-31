@@ -23,24 +23,20 @@
 <body>
 
     <main>
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                    <a class="navbar-brand" href="#home-page">Cristian Cruz</a>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre-mi">Sobre mi <span class="sr-only">(current)</span></a>
-                        </li>
-                        <!--<li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">Disabled</a>
-                                </li>-->
-                    </ul>
-                
-                </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home-page">Cristian Cruz</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+                    </li>
+                </ul>
+            </div>  
+        
+        </nav>
         <!--<div id="menu-bars" onclick="menuToggle()">
             <i class="fas fa-bars"></i>
         </div>
@@ -79,47 +75,44 @@
             </div>
         </div>-->
     
-        <section id="home-page" class="p-0">
-            <div id="background-img"></div>
+        <section id="home-page" class="background-img">
+
+            <div id="personal" class="text-light d-block w-100 text-center container-fluid animated fadeIn fast">
+                <div class="row">
+                    <div class="col-md-3 col-sm-1"></div>
+                    <div class="col-md-6 col-sm-10">
+                        <h3>Hola, yo soy</h3>
+                        <h1>
+                            Cristian Cruz
+                        </h1>
+                        <h4>
+                            y soy un <b>Desarrollador FullStack Junior</b>
+                        </h4>
         
-            <!-- particles.js container -->
-            <div id="particles-js"></div>
-
-            <div>
-                <div id="personal" class="text-light d-block w-100 text-center container-fluid animated fadeIn fast">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-1"></div>
-                        <div class="col-md-6 col-sm-10">
-                            <h3>Hola, yo soy</h3>
-                            <h1>
-                                Cristian Cruz
-                            </h1>
-                            <h4>
-                                y soy un <b>Desarrollador FullStack Junior</b>
-                            </h4>
-            
-                            
-            
-                            <img src="img/profile.jpg" alt="profile pic" class="rounded-circle w-25 shadow" id="profile-pic">
-                            <div id="icon-list-cont">
-                                <ul id="icon-list" class="p-0">
-                                    <li><a href="https://www.linkedin.com/in/cristian-alexis-cruz-3ba522187/" target="blank"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="https://github.com/gliezse" target="blank"><i class="fab fa-github-square"></i></a></li>
-                                </ul>
-                            </div>
-            
-                            <div>
-                                <a class="btn" href="#portfolio">
-                                    <h4 class="m-0">Conoceme</h4>
-                                </a>
-                            </div>
-
-
+                        
+        
+                        <img src="img/profile.jpg" alt="profile pic" class="rounded-circle w-25 shadow" id="profile-pic">
+                        <div id="icon-list-cont">
+                            <ul id="icon-list" class="p-0">
+                                <li><a href="https://www.linkedin.com/in/cristian-alexis-cruz-3ba522187/" target="blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/gliezse" target="blank"><i class="fab fa-github-square"></i></a></li>
+                            </ul>
                         </div>
-                        <div class="col-md-3 col-sm-1"></div>
+        
+                        <div>
+                            <a class="btn" href="#portfolio">
+                                <h4 class="m-0">Conoceme</h4>
+                            </a>
+                        </div>
+
+
                     </div>
+                    <div class="col-md-3 col-sm-1"></div>
                 </div>
             </div>
+   
+            <!-- particles.js container -->
+            <div id="particles-js"></div>
 
         </section>
 
@@ -128,18 +121,108 @@
 
 
         <section id="portfolio" class="bg-clarito">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 col-sm-1"></div>
-                    <div class="col-md-6 col-sm-10">
+            <div class="container">
+                <div>
                     <h1 class="color-titles titles text-center">
                         <span>
                             Portfolio
                         </span>
                     </h1>
+                    
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="portfolio-frame shadow">
+                                <img src="./img/portfolio/kittenwars/main.jpg" alt="kitten-wars-img">
+                                <div class="p-3">
+                                    <h4 class="text-center mt-2">
+                                        Kitten Wars
+                                    </h4>
+                                    <p>
+                                        Este es un juego estilo "Batalla Naval" con temática de gatos,
+                                        el cual fue desarrollado durante el programa de Capacitación FullStack de MindHub,
+                                        siendo este el proyecto final.
+                                        <br>
+                                        Para su realización, utilicé <b>Java con Spring y Gradle</b> para el backend,
+                                        mientras que para el front-end, aparte de HTML5, CSS3 y JS, utilicé frameworks
+                                        tales como <b>Vue.js, gridstack.js, JQuery, Bootstrap 4 y MDBootstrap</b> para las animaciones
+                                        presentes en todo el juego.
+                                    </p>
+                                    <div class="d-flex justify-content-around">
+                                        <a href="http://kitten-wars.herokuapp.com/web/games.html" target="blank">
+                                            <button class="btn btn-outline-primary waves-effect">Ver Online</button>
+                                        </a>
+                                        <a href="https://github.com/Gliezse/Salvo-MindHub" target="blank">
+                                            <button class="btn btn-outline-default waves-effect">Ver en GitHub <i class="fab fa-github"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="portfolio-frame shadow">
+                                <img src="./img/portfolio/nyslomegaapp/main.jpg" alt="nysl-img">
+                                <div class="p-3">
+
+                                    
+                                    <h4 class="text-center mt-2">
+                                        NYSL Mobile App
+                                    </h4>
+                                    <p>
+                                        Este fue otro de los proyectos de la Capacitacion FullStack, 
+                                        en el cual desarrollamos una web app para un entrenador de una 
+                                        liga de futbol infantil ficticia, quien la requería para que los padres de sus 
+                                        jugadores pudiesen obtener información sobre los partidos de sus 
+                                        hijos.
+                                        <br>
+                                        Se ha desarrollado en formato de <b>single-page web-app</b>, aplicando <b>Vue.js </b>
+                                        y los servicios de base de datos de <b>Firebase de Google</b>, siendo
+                                        hosteada finalmente allí mismo.
+                                    </p>
+                                    <div class="d-flex justify-content-around">
+                                        <a href="https://nysl-omega-app.firebaseapp.com" target="blank">
+                                            <button class="btn btn-outline-primary waves-effect">Ver Online</button>
+                                        </a>
+                                        <a href="https://github.com/Gliezse/NYSL-Mobile-App" target="blank">
+                                            <button class="btn btn-outline-default waves-effect">Ver en GitHub <i class="fab fa-github"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="portfolio-frame shadow">
+                                <img src="./img/portfolio/tgif/main.jpg" alt="tgif-img">
+                                <div class="p-3">
+
+                                    
+                                    <h4 class="text-center mt-2">
+                                        TGIF
+                                    </h4>
+                                    <p>
+                                        Transparent Government in Fact (TGIF) es una organización 
+                                        ficticia que requiere una página la cual pueda ofrecer datos y 
+                                        estadisticas sobre el gobierno estadounidense.
+                                        <br>
+                                        Uno de los primeros proyectos del programa de Capacitación FullStack de MindHub
+                                        que tenia como fin introducirnos a <b>JavaScript y Bootstrap</b>.
+                                        <br>
+                                        La finalidad era que aprendamos a usar <b>APIs</b>, trabajar con <b>JSONs</b>, 
+                                        aplicar logica en <b>JS</b> y estilizar con <b>Bootstrap</b>.  
+                                    </p>
+                                    <div class="d-flex justify-content-around">
+                                        <a href="https://tgif-cca.firebaseapp.com/" target="blank">
+                                            <button class="btn btn-outline-primary waves-effect">Ver Online</button>
+                                        </a>
+                                        <a href="https://github.com/Gliezse/Tgif" target="blank">
+                                            <button class="btn btn-outline-default waves-effect">Ver en GitHub <i class="fab fa-github"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-1"></div>
                 </div>
+
             </div>
         </section>
         
@@ -223,12 +306,12 @@
             
         </section>
 
-        <footer id="contacto" class="text-center w-50 m-auto rounded" style="background-color: rgb(0,0,0,0.5)">
+        <footer id="contacto" class="text-center w-50 m-auto rounded">
             <div>
                 <h1 class="titles color-titles mt-4">
                     Contacto:
                 </h1>
-                <span class="text-white">
+                <span>
                     <h5 class="m-0">Cel: 11 3287-1177</h5>
                     <h5>Mail: cristian.cruz.cca@gmail.com</h5>
                 </span>
