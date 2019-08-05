@@ -148,7 +148,15 @@ nav{
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-bottom: .5em;
+    margin-bottom: 0;
+}
+
+.title-hr{
+    background-color: #47698e;
+    height: .1em;
+    border-radius: 10px;
+    width: 20%;
+    margin: 1em auto 2em;
 }
 
 .color-titles{
@@ -237,6 +245,9 @@ nav{
 @media(max-width:768px){
     #profile-pic{
         width: 50% !important;
+    }
+    #personal h1{
+        font-size: 65px;
     }
 }
 
